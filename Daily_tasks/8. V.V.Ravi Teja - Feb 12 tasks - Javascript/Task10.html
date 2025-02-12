@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<label for="num1">1st Number:</label>
+<input type="number" id="num1" value="0"><br><br>
+
+<label for="num2">2nd Number:</label>
+<input type="number" id="num2" value="0"><br><br>
+
+<label for="operation">Select Operation:</label>
+<select id="operation">
+  <option value="multiply">Multiply</option>
+  <option value="divide">Divide</option>
+</select><br><br>
+
+<button onclick="calculate()">Calculate</button><br><br>
+
+<label for="result">The Result Is:</label>
+<input type="text" id="result" readonly>
+
+<script>
+function calculate() {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const operation = document.getElementById("operation").value;
+  let result;
+
+  if (operation === "multiply") {
+    result = num1 * num2;
+  } else if (operation === "divide") {
+    if (num2 === 0) {
+      result = "Cannot divide by zero";
+    } else {
+      result = num1 / num2;
+    }
+  }
+
+  document.getElementById("result").value = result;
+}
+</script>
+
+</body>
+</html>

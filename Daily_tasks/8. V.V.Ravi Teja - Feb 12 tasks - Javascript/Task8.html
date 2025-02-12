@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>Guess Number</title>
+</head>
+<body>
+    <script>
+        function guessNumber() {
+            let randomNum = Math.floor(Math.random() * 10) + 1;
+            let userGuess = prompt("Guess a number between 1 and 10");
+
+            if (parseInt(userGuess) === randomNum) {
+                alert("Good Work");
+            } else {
+                alert("Not matched");
+                guessNumber();  
+            }
+        }
+
+        guessNumber();
+    </script>
+</body>
+</html>
