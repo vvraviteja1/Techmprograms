@@ -1,0 +1,4 @@
+com\app\model\Product.class
+com\app\SpringBootDataJpaH2Application.class
+com\app\repo\impl\OperationRunner.class
+com\app\repo\ProductRepository.class

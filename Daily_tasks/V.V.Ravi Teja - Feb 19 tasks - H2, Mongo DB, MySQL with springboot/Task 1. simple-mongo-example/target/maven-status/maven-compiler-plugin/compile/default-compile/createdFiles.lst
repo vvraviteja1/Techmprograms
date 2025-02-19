@@ -1,0 +1,5 @@
+com\example\simplemongoexample\model\Product.class
+com\example\simplemongoexample\repository\ProductRepository.class
+com\example\simplemongoexample\SimpleMongoExampleApplication.class
+com\example\simplemongoexample\controller\ProductController.class
+com\example\simplemongoexample\service\ProductService.class
